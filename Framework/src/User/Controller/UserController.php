@@ -16,8 +16,8 @@ class UserController
         $this->repository = $repository;
     }
 
-    public function create(ModelInterface $user): ModelInterface
+    public function create(ModelInterface $model): ModelInterface
     {
-        return $this->repository->save($user);
+        return $this->repository->save($model);
     }
 }

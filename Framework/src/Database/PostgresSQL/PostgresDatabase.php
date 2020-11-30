@@ -19,9 +19,9 @@ class PostgresDatabase implements DatabaseAdapter
         echo 'Disconnected to PostgreSQL Database!' . PHP_EOL;
     }
 
-    public function save(ModelInterface $user): ModelInterface
+    public function save(ModelInterface $model): ModelInterface
     {
         echo 'User saved!' . PHP_EOL;
-        return $user;
+        return $model;
     }
 }

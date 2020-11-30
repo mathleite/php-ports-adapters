@@ -12,5 +12,5 @@ interface DatabaseAdapter
 
     public function disconnect(): void;
 
-    public function save(ModelInterface $user): ModelInterface;
+    public function save(ModelInterface $model): ModelInterface;
 }
