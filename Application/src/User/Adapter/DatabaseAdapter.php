@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Application\src\User\Adapter;
 
-use Core\src\User\Model\UserModel;
+use Core\src\Interfaces\ModelInterface;
 
 interface DatabaseAdapter
 {
@@ -12,5 +12,5 @@ interface DatabaseAdapter
 
     public function disconnect(): void;
 
-    public function save(UserModel $user): UserModel;
+    public function save(ModelInterface $user): ModelInterface;
 }

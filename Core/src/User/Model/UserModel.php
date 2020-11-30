@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Core\src\User\Model;
 
-class UserModel
+use Core\src\Interfaces\ModelInterface;
+
+class UserModel implements ModelInterface
 {
     private string $name;
 

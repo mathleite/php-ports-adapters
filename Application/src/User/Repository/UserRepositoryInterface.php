@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Application\src\User\Repository;
 
-use Core\src\User\Model\UserModel;
+use Core\src\Interfaces\ModelInterface;
 
 interface UserRepositoryInterface
 {
-    public function save(UserModel $user): UserModel;
+    public function save(ModelInterface $user): ModelInterface;
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Application\src\User\Repository;
 
 use Application\src\User\Adapter\DatabaseAdapter;
+use Core\src\Interfaces\ModelInterface;
 use Core\src\User\Model\UserModel;
 
 class UserRepository implements UserRepositoryInterface
@@ -16,7 +17,7 @@ class UserRepository implements UserRepositoryInterface
         $this->database = $database;
     }
 
-    public function save(UserModel $user): UserModel
+    public function save(ModelInterface $user): ModelInterface
     {
         $this->database->connect();
         $model = $this->database->save($user);

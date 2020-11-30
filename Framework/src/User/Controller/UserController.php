@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Framework\src\User\Controller;
 
 use Application\src\User\Repository\UserRepositoryInterface;
-use Core\src\User\Model\UserModel;
+use Core\src\Interfaces\ModelInterface;
 
 class UserController
 {
@@ -16,7 +16,7 @@ class UserController
         $this->repository = $repository;
     }
 
-    public function create(UserModel $user): UserModel
+    public function create(ModelInterface $user): ModelInterface
     {
         return $this->repository->save($user);
     }
