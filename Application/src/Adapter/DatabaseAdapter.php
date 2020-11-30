@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Application\src\User\Adapter;
+namespace Application\src\Adapter;
 
 use Core\src\Interfaces\ModelInterface;
 

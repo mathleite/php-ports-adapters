@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Framework\src\Database\PostgresSQL;
 
-use Application\src\User\Adapter\DatabaseAdapter;
+use Application\src\Adapter\DatabaseAdapter;
 use Core\src\Interfaces\ModelInterface;
 
 class PostgresDatabase implements DatabaseAdapter
