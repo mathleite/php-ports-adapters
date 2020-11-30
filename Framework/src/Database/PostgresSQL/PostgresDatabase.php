@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Framework\src\Database\PostgresSQL;
 
+use Application\src\User\Adapter\DatabaseAdapter;
 use Core\src\User\Model\UserModel;
 
-class PostgresDatabase implements \Application\src\User\Adapter\DatabaseAdapter
+class PostgresDatabase implements DatabaseAdapter
 {
     public function connect(): void
     {
