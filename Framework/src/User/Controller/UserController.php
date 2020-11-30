@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Framework\src\User\Controller;
 
-use Application\src\User\Repository\UserRepositoryInterface;
+use Application\src\Interfaces\RepositoryInterface;
 use Core\src\Interfaces\ModelInterface;
 
 class UserController
 {
-    private UserRepositoryInterface $repository;
+    private RepositoryInterface $repository;
 
-    public function __construct(UserRepositoryInterface $repository)
+    public function __construct(RepositoryInterface $repository)
     {
         $this->repository = $repository;
     }

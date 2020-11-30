@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Application\src\User\Repository;
 
+use Application\src\Interfaces\RepositoryInterface;
 use Application\src\User\Adapter\DatabaseAdapter;
 use Core\src\Interfaces\ModelInterface;
-use Core\src\User\Model\UserModel;
 
-class UserRepository implements UserRepositoryInterface
+class UserRepository implements RepositoryInterface
 {
     private DatabaseAdapter $database;
 
