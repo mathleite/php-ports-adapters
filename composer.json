@@ -1,0 +1,18 @@
+{
+    "name": "mathleite/domain_example",
+    "description": "description",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Matheus Leite",
+            "email": "matheus.leite.san@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Application\\": "Application/",
+            "Framework\\": "Framework/"
+        }
+    }
+}
